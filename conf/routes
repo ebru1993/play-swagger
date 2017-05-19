@@ -2,18 +2,16 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
+# Api stuff
 GET     /movie/:id                  controllers.MovieController.getMovie(id:Integer)
 
-# An example controller showing how to use dependency injection
-GET     /count                      controllers.CountController.count
-# An example controller showing how to write asynchronous code
-GET     /message                    controllers.AsyncController.message
+# Play stuff
+GET     /play.html                  controllers.HomeController.index()
 
-# Swagger stuff
-GET     /                           controllers.Assets.at(path="/public/swagger-ui",file="index.html")
+# Swagger stuff for documentation
+GET     /                           controllers.Assets.at(path="/public/swagger-ui", file="index.html")
 GET     /swagger.json               controllers.ApiHelpController.getResources
-GET     /*file                      controllers.Assets.at(path="/public/swagger-ui",file)
-
+GET     /*file                      controllers.Assets.at(path="/public/swagger-ui", file)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
