@@ -43,21 +43,6 @@ public class EmployeeController extends Controller {
         return null;
     }
 
-    @ApiOperation(
-        nickname = "createOneEmployee",
-        value = "Create one new employee engaged in the hospital",
-        notes = "With this method you can create one particular employee with all it's informations",
-        httpMethod = "POST",
-        response = Employee.class)
-    @ApiResponses(value = {
-        @ApiResponse(code = 200, message = "OK", response = Employee.class),
-        @ApiResponse(code = 401, message = "Unauthorized", response = ErrorMessage.class),
-        @ApiResponse(code = 500, message = "Internal Server ErrorMessage", response = ErrorMessage.class) })
-    public Result createOneEmployee(){
-
-        //some Stuff here
-        return null;
-    }
 
 
 }
