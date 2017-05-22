@@ -1,19 +1,19 @@
 package models;
 
-public class Error {
-    public int id;
+public class ErrorMessage {
+    public Integer id;
     public String message;
 
-    public Error(int id, String message) {
+    public ErrorMessage(Integer id, String message) {
         this.id = id;
         this.message = message;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
