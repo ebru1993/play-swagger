@@ -3,7 +3,10 @@
 # ~~~~
 
 # Api stuff
-GET     /movie/:id                  controllers.MovieController.getMovie(id:Integer)
+GET     /employee/                  controllers.EmployeeController.getAllEmployee()
+GET     /employee/:id               controllers.EmployeeController.getOneEmployee(id:Integer)
+
+POST    /employee                   controllers.EmployeeController.createOneEmployee()
 
 # Play stuff
 GET     /play.html                  controllers.HomeController.index()
